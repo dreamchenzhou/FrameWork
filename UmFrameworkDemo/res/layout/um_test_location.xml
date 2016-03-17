@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<RadioGroup
+		android:id="@+id/rbBody"
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<RadioButton
+			android:id="@+id/rbInner"
+			android:text="内置"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+		<RadioButton
+			android:id="@+id/rbBaidu"
+			android:text="百度"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+		<RadioButton
+			android:id="@+id/rbTencent"
+			android:text="腾讯"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+	</RadioGroup>
+	<View
+		android:background="#88888888"
+		android:layout_width="match_parent"
+		android:layout_height="1dip" />
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<ToggleButton
+			android:id="@+id/btnStart"
+			android:textOn="启动"
+			android:textOff="停止"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+		<ToggleButton
+			android:id="@+id/btnAuto"
+			android:textOn="自动"
+			android:textOff="手动"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+		<Button
+			android:id="@+id/btnGet"
+			android:text="获取"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+		<Button
+			android:id="@+id/btnClear"
+			android:text="清理"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+	</LinearLayout>
+	<View
+		android:background="#88888888"
+		android:layout_width="match_parent"
+		android:layout_height="1dip" />
+	<ListView
+		android:id="@+id/listView"
+		android:cacheColorHint="#00000000"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent" />
+</LinearLayout>
